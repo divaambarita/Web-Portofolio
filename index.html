@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Diva Ambarita</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Portofolio <strong>Diva Ambarita</strong></h1>
+            <h2>Mahasiswa Ilmu Komputer</h2>
+            <p><strong>Universitas Pertamina</strong></p>
+        </header>
+
+        <section class="media">
+            <div class="photo-and-buttons">
+                <img src="poto2.jpg" alt="Foto Diva Ambarita" class="profile-photo">
+                <div class="buttons">
+                    <a href="mailto:divaambarita83@gmail.com" class="button">Email</a>
+                    <a href="https://github.com/divaambarita" target="_blank" class="button">GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="personal-info">
+            <h3>Informasi Pribadi</h3>
+            <table>
+                <tr><td><strong>Nama</strong></td><td>Diva Ambarita</td></tr>
+                <tr><td><strong>Program Studi</strong></td><td>Ilmu Komputer</td></tr>
+                <tr><td><strong>Universitas</strong></td><td>Universitas Pertamina</td></tr>
+                <tr><td><strong>Telepon</strong></td><td>+62 831 9703 5306</td></tr>
+            </table>
+        </section>
+
+        <section class="objective">
+            <h3>Pernyataan Tujuan</h3>
+            <p>Saya ingin menjadi seorang software engineer dan terus mengembangkan kemampuan di bidang teknologi.</p>
+        </section>
+
+        <section class="education">
+            <h3>Riwayat Pendidikan</h3>
+            <table>
+                <tr><td><strong>S1 Ilmu Komputer</strong></td><td>Universitas Pertamina, 2022 - Sekarang</td></tr>
+                <tr><td colspan="2"><strong>Prestasi:</strong> Mahasiswi Terbaik Angkatan 2022</td></tr>
+            </table>
+        </section>
+
+        <section class="skills">
+            <h3>Keterampilan</h3>
+            <div class="skills-grid">
+                <div><strong>Pemrograman:</strong> Python, SQL</div>
+                <div><strong>Framework:</strong> Django</div>
+                <div><strong>Desain:</strong> Figma</div>
+                <div><strong>Version Control:</strong> Git, GitHub</div>
+            </div>
+        </section>
+
+        <section class="organizations">
+            <h3>Organisasi dan Kepanitiaan</h3>
+            <div class="org-grid">
+                <div><strong>Anggota AcademyUp</strong> - Himpunan Mahasiswa Ilmu Komputer</div>
+                <div><strong>Panitia CiteUp 2024</strong></div>
+            </div>
+        </section>
+
+        <section class="media-content">
+            <h3>Video dan Audio</h3>
+            <video controls width="400">
+                <source src="vid_dipa.mp4" type="video/mp4">
+                Browser Anda tidak mendukung video.
+            </video>
+            <audio controls>
+                <source src="audiodipa.mp3" type="audio/mpeg">
+                Browser Anda tidak mendukung audio.
+            </audio>
+        </section>
+
+        <section class="contact-form">
+            <h3>Hubungi Saya</h3>
+            <form id="formKontak">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+                <span class="error-message" id="namaError"></span>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+
+                <label for="telepon">Nomor HP:</label>
+                <input type="tel" id="telepon" name="telepon" required pattern="[0-9]{10,13}">
+                <span class="error-message" id="teleponError"></span>
+
+                <label for="pesan">Deskripsi/Pesan:</label>
+                <textarea id="pesan" name="pesan" required></textarea>
+                <span class="error-message" id="pesanError"></span>
+
+                <button type="button" onclick="validasiDanKirim()">Kirim</button>
+            </form>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Portofolio Diva Ambarita</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
